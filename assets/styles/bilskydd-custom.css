@@ -1,0 +1,97 @@
+/* Encoder css start */
+:root {
+  --white: #ffffff;
+  --theme-dark: #050505;
+}
+body {
+  position: relative;
+  background-color: var(--bg2);
+  color: var(--theme-color);
+}
+body {
+  font-family: var(--ff-montserrat);
+}
+[drawer-backdrop] {
+  cursor: pointer;
+}
+body [drawer-backdrop]:not(:last-child) {
+  display: none;
+}
+iframe,
+img,
+video {
+  max-width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  /* max-width: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.section-padding {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* For Webkit browsers (Chrome, Safari, Opera) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Remove autofill background completely */
+.no-autofill-transparent:-webkit-autofill,
+.no-autofill-transparent:-webkit-autofill:hover,
+.no-autofill-transparent:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: var(
+    --phthalo-green
+  ) !important; /* Keep text visible */
+  caret-color: var(--phthalo-green) !important; /* Cursor color */
+  background-color: transparent !important;
+  background-clip: content-box !important;
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+/* Normal state — fully transparent */
+.no-autofill-transparent {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-color: transparent !important;
+  color: var(--phthalo-green) !important;
+  border-color: var(--phthalo-green) !important;
+}
+
+@media only screen and (width >= 48rem) {
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (width >= 64rem) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  main {
+    min-height: calc(100vh - 570px);
+  }
+}
+@media only screen and (width >= 80rem) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
