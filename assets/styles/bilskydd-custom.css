@@ -1,4 +1,6 @@
 /* Encoder css start */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --white: #ffffff;
   --theme-dark: #050505;
@@ -7,9 +9,7 @@ body {
   position: relative;
   background-color: var(--bg2);
   color: var(--theme-color);
-}
-body {
-  font-family: var(--ff-montserrat);
+  font-family: "Jost", sans-serif;
 }
 [drawer-backdrop] {
   cursor: pointer;
@@ -29,8 +29,8 @@ video {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .section-padding {
   padding-top: 48px;
@@ -69,7 +69,15 @@ video {
   color: var(--phthalo-green) !important;
   border-color: var(--phthalo-green) !important;
 }
-
+.text_26 {
+  font-size: clamp(18px, 3.4vw, 26px);
+}
+.text_36 {
+  font-size: clamp(18px, 3.4vw, 36px);
+}
+.text_48 {
+  font-size: clamp(26px, 4.7vw, 48px);
+}
 @media only screen and (width >= 48rem) {
   .section-padding {
     padding-top: 60px;
@@ -77,10 +85,6 @@ video {
   }
 }
 @media only screen and (width >= 64rem) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
   .section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -88,10 +92,14 @@ video {
   main {
     min-height: calc(100vh - 570px);
   }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media only screen and (width >= 80rem) {
   .container {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 95px;
+    padding-right: 95px;
   }
 }
