@@ -4,12 +4,18 @@
 :root {
   --white: #ffffff;
   --theme-dark: #050505;
+  --theme-color: #1a1a1a;
+  --body-text: #616161;
+  --primary-color: #4dc329;
+  --theme-gradient: linear-gradient(94.52deg, #a3f38a -0.03%, #4dc329 99.97%);
 }
 body {
   position: relative;
-  background-color: var(--bg2);
   color: var(--theme-color);
   font-family: "Jost", sans-serif;
+}
+.theme_gradient {
+  background: var(--theme-gradient);
 }
 [drawer-backdrop] {
   cursor: pointer;

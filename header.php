@@ -24,8 +24,21 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<header class="bilskyddHeader bg-(--theme-dark) text-white min-h-[101px]">
-		<div class="container">
-			<p class="text-center">Header coming soon...</p>
+	<header class="bilskyddHeader bg-(--theme-dark) text-white">
+		<div class="topBar bg-[rgba(255,255,255,.15)]">
+			<div class="container">
+				<div class="flex justify-between items-center">
+					<div class="flex items-center">
+						<button class="flex items-center space-x-1.5 cursor-help">
+							<span>
+								1–2 days delivery
+							</span>
+							<!-- Icon -->
+							<?php include get_template_directory() . '/assets/icons/i.php'; ?>
+						</button>
+					</div>
+				</div>
+			</div>
 		</div>
+
 	</header>
